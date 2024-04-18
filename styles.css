@@ -1,0 +1,18 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--black);
+}
+header {
+  min-height: 120px;
+  font-size: 16px;
+  font-weight: bold;
+}
