@@ -2,6 +2,10 @@
 :root {
   --black: #000000;
   --white: #FFFFFF;
+  --lightgray: #EDE7E3;
+  --orange: #F39422;
+  --green: #16697A;
+  --gray: #211C1C;
 }
 * {
   margin: 0;
@@ -10,9 +14,117 @@
 body {
   font-family: 'Lato', sans-serif;
   color: var(--black);
+  background-color: var(--gray);
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+/* NavBar */
 header {
-  min-height: 120px;
+  min-height: 100px;
   font-size: 16px;
   font-weight: bold;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--lightgray);
+}
+.nav ul {
+  display: flex;
+}
+.nav-list a {
+  display: block;
+  font-size: 20px;
+  margin-right: 12px;
+}
+#logo img {
+  width: 45%;
+  margin-left: 12px;
+}
+/* Welcome o hero section */
+#hero img {
+  width: 100%;
+}
+
+/* Cards grid */
+#cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-column-gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 12px auto;
+  margin-bottom: 12px;
+}
+.card {
+  background-color: var(--lightgray);
+  color: var(--green);
+  height: 400px;
+}
+.card h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.card p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Video */
+#how-it-works {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+#how-it-works > iframe {
+  width: 90%;
+}
+
+/* Most */
+#most-visited {
+  padding-top: 16px;
+  text-align: center;
+  background-color: var(--lightgray);
+}
+#most-visited-header {
+  font-size: 40px;
+  color: var(--green);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-gap: 6px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.mini-card img {
+  height: 230px;
+  width: 240px;
+}
+
+/* Footer */
+footer {
+  font-size: 26px;
+  text-align: center;
+  color: var(--lightgray);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer a {
+  font-size: 40px;
+}
+footer p {
+margin-top: 8px;
 }

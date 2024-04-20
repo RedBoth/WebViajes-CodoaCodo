@@ -14,20 +14,57 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#">Icono Empresa</a>
-      <a href="#">Inicio</a>
-      <a href="#">Viajes</a>
-      <a href="#">Hospedajes</a>
-      <a href="#">Historia</a>
-      <a href="#">Contacto</a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i>
+    <nav id="navbar" class="nav">
+      <a href="#" id="logo"><img src="./assets/img/Logo-removebg.png" alt=""></a>
+      <ul class="nav-list">
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
       </a>
     </nav>
   </header>
+  <!-- Banner y titulo -->
   <section id="hero">
-    <img src="./assets/img/posibleBanner.jpg" alt="">
+    <img src="./assets/img/Banner.jpg" alt="">
   </section>
+  <!-- Tarjetas -->
+  <section id="cards-grid">
+    <div class="card">
+      <h1>Los mejores hoteles</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio voluptatem corrupti maiores asperiores consequuntur explicabo rerum impedit officia quas. Veritatis, iste deleniti. Velit quam ad quasi optio corporis. Consequuntur?</p>
+    </div>
+    <div class="card">
+      <h1>Vuelos primera clase</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur facilis aut eum, expedita dolores maiores eos atque incidunt error ab non recusandae voluptatum cupiditate, quod dignissimos repellendus, culpa sint!</p>
+    </div>
+    <div class="card">
+      <h1>Excursiones increibles</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero magni architecto voluptates quod quasi aspernatur iste! Iure eaque aperiam assumenda, architecto temporibus magni recusandae expedita quidem! Perferendis, quibusdam impedit? Distinctio!</p>
+    </div>
+  </section>
+  <!-- Video -->
+  <section id="how-it-works">
+    <iframe id="video" src="https://www.youtube.com/watch?v=AxR-wrIOoQw&t=2s" height="500" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <!-- Destinos mas visitados-->
+  <section id="most-visited">
+    <h1 id="most-visited-header">Los 5 destinos mas elegidos</h1>
+    <div class="container">
+      <div class="mini-card"><h3>Bariloche</h3><img src="./assets/img/Bariloche.webp" alt="Bariloche"></div>
+      <div class="mini-card"><h3>Iguazu</h3><img src="./assets/img/Iguazu.jpg" alt="Cataratas del Iguazu"></div>
+      <div class="mini-card"><h3>Glaciar Perito Moreno</h3><img src="./assets/img/Glaciar Perito Moreno.jpg" alt="Glaciar Perito Moreno"></div>
+      <div class="mini-card"><h3>Salto del Agrio</h3><img src="./assets/img/Salto del Agrio Neuquen.jpg" alt="Salto del Agrio - Neuquen"></div>
+      <div class="mini-card"><h3>Ushuaia</h3><img src="./assets/img/Ushuaia.jpg" alt="Ushuaia"></div>
+    </div>
+  </section>
+  <footer>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <p>@Copyright 2024</p>
+  </footer>
 </body>
 </html>
