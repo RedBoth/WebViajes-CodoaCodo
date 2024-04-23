@@ -67,7 +67,7 @@ header {
 #hero {
   width: 100%;
   height: 100vh;
-  background-image: URL(./assets/img/Banner.jpg);
+  background-image: URL(./assets/img/index/Banner.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,27 +194,45 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-#patagonia{
+.tittle {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 100px;
-  background-image: url(./assets/img/d-bariloche.jpg);
-  background-position: center;
 }
-#patagonia h2 {
+.tittle h2 {
   text-transform: uppercase;
   font-size: 3.5rem;
-  color: var(--white);
+  color: var(--black);
   font-weight: bold;
-  opacity: 70%;
+  opacity: 75%;
+}
+#patagonia {
+  background-image: url(./assets/img/destinations/d-patagonia.JPG);
+  background-position: center;
+}
+#nea {
+  background-image: url(./assets/img/destinations/d-iguazu.JPG);
+  background-position: center;
+}
+#cuyo {
+  background-image: url(./assets/img/destinations/d-mendoza.jpg);
+  background-position: center;
+}
+#noa {
+  background-image: url(./assets/img/destinations/d-jujuy.JPG);
+  background-position: center;
+}
+#centro {
+  background-image: url(./assets/img/destinations/d-ba.png);
+  background-position: center;
 }
 .destinations-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  margin: 30px;
 }
 .destinations-card {
   width: 225px;
