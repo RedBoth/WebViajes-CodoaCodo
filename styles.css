@@ -195,6 +195,9 @@ footer p {
   flex-direction: column;
 }
 #patagonia{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100px;
   background-image: url(./assets/img/d-bariloche.jpg);
@@ -204,8 +207,6 @@ footer p {
   text-transform: uppercase;
   font-size: 3.5rem;
   color: var(--white);
-  text-align: center;
-  vertical-align: middle;
   font-weight: bold;
   opacity: 70%;
 }
