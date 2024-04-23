@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -50,7 +51,7 @@ header {
 .nav-list a {
   display: block;
   font-size: 20px;
-  margin-right: 12px;
+  margin-right: 18px;
 }
 #logo img {
   width: 45%;
@@ -58,7 +59,7 @@ header {
 }
 .nav ul a:hover {
   color: var(--orange);
-  border-bottom: 3px solid #f39422;
+  border-bottom: 3px solid var(--orange);
 }
 
 /* Welcome o hero section */
@@ -86,7 +87,6 @@ header {
 		opacity: 0;
 		transform: scale(1.4);
 	}
-
 	100% {
 		opacity: 85%;
 		transform: scale(1);
@@ -107,6 +107,7 @@ header {
   background-color: var(--lightgray);
   color: var(--green);
   height: 400px;
+  opacity: 82%;
 }
 .card h1 {
   text-align: center;
@@ -135,21 +136,23 @@ header {
 #most-visited {
   text-align: center;
   background-color: var(--lightgray);
+  padding: 20px 10px;
 }
 #most-visited-header {
   font-size: 40px;
   color: var(--green);
-  padding: 10px 0;
+  padding-bottom: 15px;
 }
 .container {
   display: flex;
   justify-content: center;
   width: 100vw;
   flex-wrap: wrap;
+  gap: 15px;
 }
-.mini-card {
+/*.mini-card {
   padding: 10px;
-}
+}*/
 .img-card {
   width: 230px;
   height: 230px;
