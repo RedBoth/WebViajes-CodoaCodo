@@ -19,6 +19,7 @@ body {
   color: var(--black);
   background-color: var(--gray);
   background-image: URL(./assets/img/bg-airplane-pattern-dark2.png);
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -186,4 +187,60 @@ footer a:hover {
 footer p {
   margin-top: 8px;
   font-size: 1rem;
+}
+
+/** DESTINATIONS **/
+#destinations {
+  display: flex;
+  flex-direction: column;
+}
+#patagonia{
+  width: 100vw;
+  height: 100px;
+  background-image: url(./assets/img/d-bariloche.jpg);
+  background-position: center;
+}
+#patagonia h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: var(--white);
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  opacity: 70%;
+}
+.destinations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+.destinations-card {
+  width: 225px;
+  height: 320px;
+  margin: 15px;
+  padding: 15px;
+  background-color: var(--lightgray);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destinations-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.destinations-card h3 {
+  color: var(--green);
+  padding: 10px 0;
+}
+.destinations-card p {
+  font-size: 0.9rem;
+}
+.transform1:hover {
+  transform: rotate(10deg) scale(1.3);
+}
+.transform2:hover {
+  transform: rotate(-10deg) scale(1.3);
 }
