@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -203,6 +204,7 @@ footer p {
 }
 .tittle h2 {
   text-transform: uppercase;
+  font-family: "Suez-one";
   font-size: 3.5rem;
   color: var(--black);
   font-weight: bold;

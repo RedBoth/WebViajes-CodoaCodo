@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --lightgray: #ede7e3;
+  --orange: #f39422;
+  --green: #16697a;
+  --lightgreen: #489FB5;
+  --morelightgreen: #82C0CC;
+  --gray: #211c1c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--black);
+  background-color: var(--gray);
+  background-image: URL(./assets/img/bg-airplane-pattern-dark2.png);
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+/* NavBar */
+header {
+  min-height: 75px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: var(--lightgray);
+  z-index: 1000;
+}
+.nav ul {
+  display: flex;
+}
+.nav-list a {
+  display: block;
+  font-size: 20px;
+  margin-right: 18px;
+}
+#logo img {
+  width: 45%;
+  margin-left: 12px;
+}
+.nav ul a:hover {
+  color: var(--orange);
+  border-bottom: 3px solid var(--orange);
+}
+/* Banner contact */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.title h2 {
+  text-transform: uppercase;
+  font-family: "Suez-one";
+  font-size: 3.5rem;
+  color: var(--black);
+  font-weight: bold;
+  opacity: 85%;
+}
+#banner-contact {
+  background-image: url(./assets/img/destinations/d-ba.png);
+  background-position: center;
+}
+.container {
+  background-color: var(--white);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+#form {
+  display: flex;
+  padding: 40px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GotTravel Contact</title>
+  <link rel="stylesheet" href="from-style.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  <script
+      src="https://kit.fontawesome.com/11d8a81032.js"
+      crossorigin="anonymous"
+    ></script>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Nav -->
+  <header>
+    <nav id="navbar" class="nav">
+      <a href="./index.html" id="logo"
+        ><img src="./assets/img/Logo-removebg.png" alt="Logo GotTravel"
+      /></a>
+      <ul class="nav-list">
+        <li><a href="./destinations.html">Destinos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="./form.html">Contactanos</a></li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Formulario -->
+  <main>
+    <div id="banner-contact" class="title">
+      <h2>Contactanos</h2>
+    </div>
+    <div class="container">
+      <section id="form">
+        <form action="" method="post">
+          <label for="name-and-surname">Nombre y apellido</label>
+          <input type="text" id="name-and-surname" name="user_name" placeholder="Ejemplo Ejemplo">
+          
+          <label for="mail">Correo Electronico</label>
+          <input type="email" name="user_mail" id="mail" placeholder="ejemplo@ejemplo.com">
+          
+          <fieldset>
+            <legend>Tipo de consulta</legend>
+            <input type="radio" name="consulta_tipo" id="trip-excursion" value="trip-excursion">
+            <label for="trip-excursion">Viaje o excursion</label>
+
+            <input type="radio" name="consulta_tipo" id="personalized" value="personalized">
+            <label for="personalized">Personalizada</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Elija su destino</legend>
+            <select name="destino" id="destino">
+              <option value="patagonia">Patagonia</option>
+              <option value="nea">Noreste Argentino</option>
+              <option value="noa">Noroeste Argentino</option>
+              <option value="cuyo">Cuyo</option>
+              <option value="bsas">Buenos Aires</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Deje su mensaje</legend>
+            <textarea name="message" id="message" cols="50" rows="4"></textarea>
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
