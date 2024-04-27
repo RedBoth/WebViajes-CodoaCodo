@@ -93,4 +93,6 @@ header {
 #form {
   display: flex;
   padding: 40px;
+  border-right: 1px solid #4d4e53;
+  width: 50%;
 }

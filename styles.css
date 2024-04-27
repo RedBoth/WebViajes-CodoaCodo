@@ -211,23 +211,23 @@ footer p {
   opacity: 75%;
 }
 #patagonia {
-  background-image: url(./assets/img/destinations/d-patagonia.JPG);
+  background-image: url(./assets/img/destinations/d-patagonia-min.JPG);
   background-position: center;
 }
 #nea {
-  background-image: url(./assets/img/destinations/d-iguazu.JPG);
+  background-image: url(./assets/img/destinations/d-iguazu-min.JPG);
   background-position: center;
 }
 #cuyo {
-  background-image: url(./assets/img/destinations/d-mendoza.jpg);
+  background-image: url(./assets/img/destinations/d-mendoza-min.jpg);
   background-position: center;
 }
 #noa {
-  background-image: url(./assets/img/destinations/d-jujuy.JPG);
+  background-image: url(./assets/img/destinations/d-jujuy-min.JPG);
   background-position: center;
 }
 #centro {
-  background-image: url(./assets/img/destinations/d-ba.png);
+  background-image: url(./assets/img/destinations/d-ba-min.png);
   background-position: center;
 }
 .destinations-container {
