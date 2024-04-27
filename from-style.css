@@ -63,6 +63,29 @@ header {
   color: var(--orange);
   border-bottom: 3px solid var(--orange);
 }
+/* Footer */
+footer {
+  font-size: 26px;
+  text-align: center;
+  color: var(--green);
+  background-color: var(--lightgray);
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+footer a {
+  font-size: 40px;
+  padding: 10px;
+}
+footer a:hover {
+  color: var(--morelightgreen);
+}
+footer p {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* Banner contact */
 .title {
   display: flex;

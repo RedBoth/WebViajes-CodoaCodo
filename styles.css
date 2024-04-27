@@ -174,9 +174,11 @@ header {
 footer {
   font-size: 26px;
   text-align: center;
-  color: var(--lightgray);
+  color: var(--green);
+  background-color: var(--lightgray);
   margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 20px;
 }
 footer a {
   font-size: 40px;
@@ -188,6 +190,7 @@ footer a:hover {
 footer p {
   margin-top: 8px;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 /** DESTINATIONS **/
@@ -216,7 +219,7 @@ footer p {
 }
 #nea {
   background-image: url(./assets/img/destinations/d-iguazu-min.JPG);
-  background-position: center;
+  background-position: 80% ;
 }
 #cuyo {
   background-image: url(./assets/img/destinations/d-mendoza-min.jpg);
