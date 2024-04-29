@@ -207,10 +207,9 @@ footer p {
 }
 .tittle h2 {
   text-transform: uppercase;
-  font-family: "Suez-one";
+  font-family: "Suez One", serif;
   font-size: 3.5rem;
   color: var(--black);
-  font-weight: bold;
   opacity: 75%;
 }
 #patagonia {

@@ -97,20 +97,19 @@ footer p {
 }
 .title h2 {
   text-transform: uppercase;
-  font-family: "Suez-one";
+  font-family: "Suez One", serif;
   font-size: 3.5rem;
   color: var(--black);
-  font-weight: bold;
   opacity: 85%;
 }
 #banner-contact {
-  background-image: url(./assets/img/destinations/d-ba.png);
+  background-image: url(./assets/img/destinations/d-ba-min.png);
   background-position: center;
 }
 .container {
   background-color: var(--white);
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto;
   border-radius: 20px;
 }
 #form {
