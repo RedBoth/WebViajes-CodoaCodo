@@ -56,12 +56,54 @@ header {
   margin-right: 18px;
 }
 #logo img {
-  width: 45%;
+  width: 300px;
   margin-left: 12px;
 }
-.nav ul a:hover {
+#nav-desktop li a:hover {
   color: var(--orange);
   border-bottom: 3px solid var(--orange);
+}
+.menu-toggle {
+  display: none;
+}
+.menu-hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0 15px;
+  color: var(--green);
+  font-size: 30px;
+}
+#nav-mobile {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: var(--lightgray);
+  position: absolute;
+  left: 0;
+  top: 75px;
+}
+#nav-mobile li {
+  padding: 10px;
+}
+#nav-mobile li a:hover {
+  color: var(--orange);
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.menu-toggle:checked~#nav-mobile {
+  display: flex;
+}
+/* Nav Responsive */
+@media (max-width: 760px) {
+  #nav-desktop {
+    display: none;
+  }
+  .menu-hamburger {
+    display: block;
+  }
 }
 
 /* Welcome o hero section */
@@ -122,6 +164,9 @@ header {
   color: var(--lightgreen);
   padding: 0 15px;
 }
+.card:hover{
+  opacity: 100%;
+}
 
 /* Video */
 #how-it-works {
@@ -176,6 +221,7 @@ footer {
   text-align: center;
   color: var(--green);
   background-color: var(--lightgray);
+  opacity: 85%;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 20px;
@@ -185,9 +231,10 @@ footer a {
   padding: 10px;
 }
 footer a:hover {
-  color: var(--morelightgreen);
+  color: var(--orange);
 }
 footer p {
+  color: var(--lightgreen);
   margin-top: 8px;
   font-size: 1rem;
   font-weight: bold;
