@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rye&family=Teko:wght@300..700&display=swap');
+
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -117,12 +121,15 @@ header {
   align-items: center;
 }
 #hero h1 {
-  font-size: 7.5vw;
+  font-family: "Kaushan Script", cursive;
+  font-size: 8vw;
   opacity: 85%;
   animation: myAnim 2s ease 0s 1 normal forwards;
 }
 #hero h2 {
-  font-size: 3.5vw;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
   opacity: 85%;
 }
 
@@ -154,6 +161,7 @@ header {
   opacity: 82%;
 }
 .card h1 {
+  font-family: "Kaushan Script", cursive;
   text-align: center;
   font-size: 40px;
   padding: 15px 0;
@@ -186,6 +194,9 @@ header {
   padding: 20px 10px;
 }
 #most-visited-header {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 40px;
   color: var(--green);
   padding-bottom: 15px;
