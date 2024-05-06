@@ -157,8 +157,12 @@ header {
 .card {
   background-color: var(--lightgray);
   color: var(--green);
-  height: 400px;
+  height: auto;
   opacity: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 .card h1 {
   font-family: "Kaushan Script", cursive;
@@ -171,9 +175,25 @@ header {
   font-size: 18px;
   color: var(--lightgreen);
   padding: 0 15px;
+  margin-bottom: 12px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
 }
 .card:hover{
   opacity: 100%;
+}
+/* Grid responsive */
+@media (max-width: 760px) {
+  #cards-grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    margin: 15px auto;
+  }
+  .card img{
+    height: auto;
+  }
 }
 
 /* Video */
