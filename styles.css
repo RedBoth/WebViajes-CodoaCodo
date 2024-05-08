@@ -229,6 +229,9 @@ header {
   flex-wrap: wrap;
   gap: 15px;
 }
+.mini-card h3{
+  margin-bottom: 8px;
+}
 .img-card {
   width: 230px;
   height: 230px;
@@ -267,6 +270,21 @@ footer p {
   margin-top: 8px;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.scroll-up {
+  all: unset;
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 35px;
+  font-size: 3rem;
+  color: var(--orange);
+  z-index: 450;
+  cursor: pointer;
+}
+.scroll-up:hover {
+  color: #d88219;
 }
 
 /** DESTINATIONS **/
