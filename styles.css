@@ -225,9 +225,9 @@ header {
   flex-wrap: wrap;
   gap: 15px;
 }
-/*.mini-card {
-  padding: 10px;
-}*/
+.mini-card h3{
+  margin-bottom: 8px;
+}
 .img-card {
   width: 230px;
   height: 230px;
