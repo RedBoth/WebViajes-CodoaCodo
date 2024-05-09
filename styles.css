@@ -105,6 +105,11 @@ header {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  #logo img {
+    width: 250px;;
+  }
+}
 
 /* Welcome o hero section */
 #hero {
@@ -139,6 +144,30 @@ header {
 		opacity: 85%;
 		transform: scale(1);
 	}
+}
+
+/* Resposive Banner */
+@media (max-width: 760px) {
+  #hero h1 {
+    font-size: 6.5rem;
+    line-height: 90%;
+    text-align: center;
+    margin: 0 10px 40px 10px;
+  }
+  #hero h2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 540px) {
+  #hero h1 {
+    font-size: 4rem;
+    line-height: 90%;
+    text-align: center;
+    margin: 0 10px 30px 10px;
+  }
+  #hero h2 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Cards grid */
