@@ -213,7 +213,7 @@ header {
 .card:hover{
   opacity: 100%;
 }
-/* Grid responsive */
+/* Grid responsive for tablet*/
 @media (max-width: 760px) {
   #cards-grid {
     grid-template-columns: 1fr;
@@ -221,9 +221,13 @@ header {
     margin: 15px auto;
   }
   .card img{
-    height: auto;
+    width: 100%;
+    }
+  .card {
+    margin-bottom: 8px;
   }
 }
+/* Grid responsive for mobile */
 
 /* Video */
 #how-it-works {
