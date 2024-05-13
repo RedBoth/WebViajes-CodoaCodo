@@ -383,72 +383,49 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.tittle-services {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100px;
-}
-.tittle-services h2 {
-  font-family: "Suez One", serif;
-  font-size: 4rem;
-  color: var(--black);
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombreado blanco */
-  opacity: 1; 
-}
-
 #hoteles {
   background-image: url(./assets/img/services/hotel4.png);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; 
-  opacity: 0.9; 
 }
-
 #vuelos {
   background-image: url(./assets/img/services/bannervuelos.jpg);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.9; 
+  background-position: center;
 }
-
 #excursiones {
   background-image: url(./assets/img/services/bannerexcursiones.jpg);
+  background-size: 130%;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.9; 
 }
-
 #container-services {
+  margin: 30px;
   display: flex;
 }
-
+.reverse {
+  flex-direction: row-reverse;
+}
 #text {
   flex: 1;
-  padding: 20px;
-  font-family: "Suez One", serif;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
   color: white;
+  line-height: 1.5;
   text-align: justify;
+  align-items: center;
 }
-
 #services-images {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-
 #services-images img {
-  width: 150px;
-  height: 150px;
-  margin: 5px; 
-  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  margin: 6px; 
+  border: 4px white solid;
   object-fit: cover; 
-  flex-basis: calc(50% - 10px); 
   transition: transform 400ms; 
 }
-
 #services-images img:hover {
   transform: scale(1.1); /* Escalar la imagen al hacer hover */
 }
