@@ -183,7 +183,7 @@ header {
 .card {
   background-color: var(--lightgray);
   color: var(--green);
-  height: auto;
+  height: 500px;
   opacity: 82%;
   display: flex;
   flex-direction: column;
