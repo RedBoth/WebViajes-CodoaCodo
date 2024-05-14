@@ -138,7 +138,7 @@ footer p {
   bottom: 25px;
   right: 35px;
   font-size: 3rem;
-  color: var(--orange);
+  color: var(--green);
   z-index: 450;
   cursor: pointer;
 }
