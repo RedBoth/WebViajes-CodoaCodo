@@ -303,7 +303,7 @@ footer p {
   font-size: 1rem;
   font-weight: bold;
 }
-
+/* Scroll up */
 .scroll-up {
   all: unset;
   display: none;

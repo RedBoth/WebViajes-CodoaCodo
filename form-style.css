@@ -130,6 +130,22 @@ footer p {
   font-weight: bold;
 }
 
+/* Scroll up */
+.scroll-up {
+  all: unset;
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 35px;
+  font-size: 3rem;
+  color: var(--orange);
+  z-index: 450;
+  cursor: pointer;
+}
+.scroll-up:hover {
+  color: #d88219;
+}
+
 /* Banner contact */
 .title {
   display: flex;
