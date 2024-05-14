@@ -46,6 +46,7 @@ header {
   height: 75px;
   background-color: var(--lightgray);
   z-index: 1000;
+  border-bottom: 2px solid var(--gray);
 }
 .nav ul {
   display: flex;
@@ -203,6 +204,7 @@ label {
 input[type="submit"] {
   background-color: var(--green); /*color de fondo */
   color: var(--white); /*color del texto */
+  margin-top: 8px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px; /*borde redondeado */
@@ -217,4 +219,7 @@ input[type="submit"]:hover {
 /*radio buttons */
 input[type="radio"] {
   margin-right: 5px;
+}
+#radio-travel {
+  margin-right: 8px;
 }

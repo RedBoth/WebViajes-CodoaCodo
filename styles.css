@@ -46,6 +46,7 @@ header {
   height: 75px;
   background-color: var(--lightgray);
   z-index: 1000;
+  border-bottom: 2px solid var(--gray);
 }
 .nav ul {
   display: flex;
@@ -107,7 +108,7 @@ header {
 }
 @media (max-width: 450px) {
   #logo img {
-    width: 250px;;
+    width: 250px;
   }
 }
 
@@ -174,7 +175,7 @@ header {
 /* Cards grid */
 #cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-column-gap: 20px;
   width: 100%;
   max-width: 1280px;
@@ -218,11 +219,12 @@ header {
 @media (max-width: 760px) {
   #cards-grid {
     grid-template-columns: 1fr;
-    grid-column-gap: 0;
+    grid-row-gap: 10px;
     margin: 15px auto;
   }
   .card img{
-    height: auto;
+    height: 400px;
+    object-fit: fill;
   }
 }
 
