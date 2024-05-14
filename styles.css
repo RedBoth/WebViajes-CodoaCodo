@@ -119,7 +119,7 @@ header {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 #hero h1 {
@@ -133,6 +133,7 @@ header {
   text-transform: uppercase;
   font-size: 3vw;
   opacity: 85%;
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {

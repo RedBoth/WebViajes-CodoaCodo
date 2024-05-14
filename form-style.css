@@ -149,15 +149,72 @@ footer p {
   background-image: url(./assets/img/destinations/d-ba-min.png);
   background-position: center;
 }
-.container {
+/*.container {
   background-color: var(--white);
   width: 80%;
   margin: 40px auto;
   border-radius: 20px;
+}*/
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
-#form {
+
+
+
+/*#form {
   display: flex;
   padding: 40px;
   border-right: 1px solid #4d4e53;
   width: 50%;
+}*/
+
+#form {
+  background-color: var(--lightgray); /*color de fondo del formulario */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra*/
+  padding: 40px;
+  width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray); /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+}
+textarea {
+  height: 100%; /* Establecer una altura predeterminada */
+  resize: vertical; /* Permitir que el textarea sea redimensionable verticalmente */
+}
+
+label {
+  font-weight: bold;
+  color: var(--gray);
+}
+
+/*botones */
+input[type="submit"] {
+  background-color: var(--green); /*color de fondo */
+  color: var(--white); /*color del texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /*borde redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /*Transición*/
+}
+
+input[type="submit"]:hover {
+  background-color: var(--lightgreen); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/*radio buttons */
+input[type="radio"] {
+  margin-right: 5px;
 }
