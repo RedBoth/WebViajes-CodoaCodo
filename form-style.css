@@ -159,8 +159,13 @@ footer p {
   text-transform: uppercase;
   font-family: "Suez One", serif;
   font-size: 3.5rem;
+}
+.contact-us {
   color: var(--black);
   opacity: 85%;
+}
+.validation-form {
+  color: var(--lightgray);
 }
 #banner-contact {
   background-image: url(./assets/img/destinations/d-ba-min.png);
@@ -178,8 +183,13 @@ footer p {
   align-items: center; 
   height: 100vh; 
 }
-
-
+.response {
+  background-color: var(--lightgray); /*color de fondo del formulario */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra*/
+  padding: 40px;
+  width: 80%;
+}
 
 /*#form {
   display: flex;
@@ -202,7 +212,8 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 8px;
   border: 1px solid var(--gray); /* Borde */
   border-radius: 5px; /* Borde redondeado */
 }
@@ -215,7 +226,9 @@ label {
   font-weight: bold;
   color: var(--gray);
 }
-
+div > span {
+  margin-bottom: 10px;
+}
 /*botones */
 input[type="submit"] {
   background-color: var(--green); /*color de fondo */
@@ -238,4 +251,14 @@ input[type="radio"] {
 }
 #radio-travel {
   margin-right: 8px;
+}
+
+/* Mensajes de validacion */
+.error {
+  color: salmon;
+  display: block;
+}
+.invalid {
+  border: 1px solid salmon;
+  box-shadow: 0 0 8px salmon;
 }

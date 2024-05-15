@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,17 +50,23 @@
   </header>
   <!-- Formulario -->
   <main>
-    <div id="banner-contact" class="title">
+    <div id="banner-contact" class="title contact-us" >
       <h2>Contactanos</h2>
     </div>
     <div class="container">
       <section id="form">
-        <form action="" method="post">
-          <label for="name-and-surname">Nombre y apellido</label>
-          <input type="text" id="name-and-surname" name="user_name" placeholder="Ejemplo Ejemplo">
+        <form action="validation-form.html" onsubmit="return validation();">
+          <div id="username">
+            <label for="name-and-surname">Nombre y apellido</label>
+            <input type="text" id="name-and-surname" name="user_name" placeholder="Ejemplo Ejemplo">
+            <span></span>
+          </div>
           
-          <label for="mail">Correo Electronico</label>
-          <input type="email" name="user_mail" id="mail" placeholder="ejemplo@ejemplo.com">
+          <div id="email">
+            <label for="mail">Correo Electronico</label>
+            <input type="email" name="user_mail" id="mail" placeholder="ejemplo@ejemplo.com">
+            <span></span>
+          </div>
           
           <fieldset>
             <legend>Tipo de consulta</legend>
@@ -74,19 +80,23 @@
           <fieldset>
             <legend>Elija su destino</legend>
             <select name="destino" id="destino">
+              <option value="">--Elija su destino--</option>
               <option value="patagonia">Patagonia</option>
               <option value="nea">Litoral</option>
               <option value="noa">Noroeste Argentino</option>
               <option value="cuyo">Cuyo</option>
               <option value="bsas">Buenos Aires</option>
             </select>
+            <span></span>
           </fieldset>
 
           <fieldset>
             <legend>Deje su mensaje</legend>
             <textarea name="message" id="message" cols="50" rows="4"></textarea>
+            <span></span>
           </fieldset>
           <input type="submit" value="Submit">
+          <span id="button-error"></span>
         </form>
       </section>
     </div>
@@ -99,5 +109,6 @@
     <p>Copyright <i class="fa-regular fa-copyright"></i> 2024</p>
   </footer>
   <script src="app.js"></script>
+  <script src="form-validation.js"></script>
 </body>
 </html>
