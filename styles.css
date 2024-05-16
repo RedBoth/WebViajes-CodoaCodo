@@ -449,6 +449,10 @@ footer p {
 .services-images img:hover {
   transform: scale(1.1); /* Escalar la imagen al hacer hover */
 }
+.services-images:has(.image:hover)
+.image:not(:hover) {
+  filter: grayscale(100%) brightness(50%);
+}
 /* Responsive */
 @media (max-width: 1000px) {
   .container-services {
