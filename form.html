@@ -69,13 +69,16 @@
             <span></span>
           </div>
           
-          <fieldset>
+          <fieldset id="consulta">
             <legend>Tipo de consulta</legend>
-            <input type="radio" name="consulta_tipo" id="trip-excursion" value="trip-excursion">
-            <label id="radio-travel" for="trip-excursion">Viaje o excursion</label>
-
+            <div>
+              <input type="radio" name="consulta_tipo" id="trip-excursion" value="trip-excursion">
+              <label id="radio-travel" for="trip-excursion">Viaje o excursion</label>
+            </div>
+            <div>
             <input type="radio" name="consulta_tipo" id="personalized" value="personalized">
             <label for="personalized">Personalizada</label>
+            </div>
           </fieldset>
 
           <fieldset>
@@ -96,7 +99,7 @@
             <textarea name="message" id="message" cols="50" rows="4"></textarea>
             <span></span>
           </fieldset>
-          <input type="submit" value="Submit" id="btn-submit">
+          <input type="submit" value="Submit">
           <span id="button-error"></span>
         </form>
       </section>

@@ -336,7 +336,7 @@ footer p {
   font-family: "Suez One", serif;
   font-size: 3.5rem;
   color: var(--black);
-  opacity: 75%;
+  opacity: 80%;
 }
 #patagonia {
   background-image: url(./assets/img/destinations/d-patagonia-min.JPG);
@@ -404,6 +404,7 @@ footer p {
 #hoteles {
   background-image: url(./assets/img/services/hotel4.png);
   background-size: cover;
+  filter: brightness(130%);
 }
 #vuelos {
   background-image: url(./assets/img/services/bannervuelos.jpg);
@@ -411,7 +412,7 @@ footer p {
   background-position: center;
 }
 #excursiones {
-  background-image: url(./assets/img/services/bannerexcursiones.jpg);
+  background-image: url(./assets/img/services/s-excursionesBanner.jpg);
   background-size: 130%;
   background-position: center;
 }
@@ -448,6 +449,10 @@ footer p {
 .services-images img:hover {
   transform: scale(1.1); /* Escalar la imagen al hacer hover */
 }
+.services-images:has(.image:hover)
+.image:not(:hover) {
+  filter: grayscale(100%) brightness(50%);
+}
 /* Responsive */
 @media (max-width: 1000px) {
   .container-services {
@@ -467,5 +472,8 @@ footer p {
     margin-top: 20px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+  .tittle h2 {
+    font-size: 3rem;
   }
 }
