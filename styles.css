@@ -116,11 +116,11 @@ header {
 #hero {
   width: 100%;
   height: 100vh;
-  background-image: URL(./assets/img/index/Banner.jpg);
+  background-image: URL(./assets/img/index/i-bannerPatagonia.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
 }
 #hero h1 {
@@ -211,6 +211,7 @@ header {
 .card img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 .card:hover{
   opacity: 100%;
@@ -224,7 +225,6 @@ header {
   }
   .card img{
     height: 400px;
-    object-fit: fill;
   }
 }
 
@@ -239,7 +239,7 @@ header {
   width: 90%;
 }
 
-/* Most */
+/* Most Visited */
 #most-visited {
   text-align: center;
   background-color: var(--lightgray);
@@ -254,13 +254,26 @@ header {
   color: var(--green);
   padding-bottom: 15px;
 }
-.container {
+#most-visited .container {
   display: flex;
   justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
   gap: 15px;
+  width: 100%;
 }
+
+/*@media (max-width: 500px) {
+  #most-visited .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  #most-visited .container > .mini-card {
+    scroll-snap-align: start;
+  }
+}*/
 .mini-card h3{
   margin-bottom: 8px;
 }
@@ -420,6 +433,13 @@ footer p {
   margin: 30px;
   display: flex;
 }
+.container-services h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.container-services p {
+  margin-bottom: 10px;
+}
 .reverse {
   flex-direction: row-reverse;
 }
@@ -444,7 +464,7 @@ footer p {
   margin: 6px; 
   border: 4px white solid;
   object-fit: cover; 
-  transition: transform 400ms; 
+  transition: transform 400ms, filter 400ms;
 }
 .services-images img:hover {
   transform: scale(1.1); /* Escalar la imagen al hacer hover */
