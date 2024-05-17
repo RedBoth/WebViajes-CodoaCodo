@@ -254,22 +254,24 @@ header {
   color: var(--green);
   padding-bottom: 15px;
 }
-/*#most-visited .container {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 15px;
-  width: 100%;
-  overflow-x: scroll;
-}*/
 #most-visited .container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  width: 100%;
 }
-#most-visited .container > .mini-card {
-  scroll-snap-align: start;
-}
+
+/*@media (max-width: 500px) {
+  #most-visited .container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  #most-visited .container > .mini-card {
+    scroll-snap-align: start;
+  }
+}*/
 .mini-card h3{
   margin-bottom: 8px;
 }
