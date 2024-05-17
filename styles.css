@@ -420,6 +420,13 @@ footer p {
   margin: 30px;
   display: flex;
 }
+.container-services h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.container-services p {
+  margin-bottom: 10px;
+}
 .reverse {
   flex-direction: row-reverse;
 }
@@ -444,7 +451,7 @@ footer p {
   margin: 6px; 
   border: 4px white solid;
   object-fit: cover; 
-  transition: transform 400ms; 
+  transition: transform 400ms, filter 400ms;
 }
 .services-images img:hover {
   transform: scale(1.1); /* Escalar la imagen al hacer hover */
