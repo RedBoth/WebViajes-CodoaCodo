@@ -186,7 +186,6 @@ header {
   background-color: var(--lightgray);
   color: var(--green);
   height: 500px;
-  opacity: 82%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,7 +213,7 @@ header {
   object-fit: cover;
 }
 .card:hover{
-  opacity: 100%;
+  filter: brightness(110%);
 }
 /* Grid responsive */
 @media (max-width: 760px) {
