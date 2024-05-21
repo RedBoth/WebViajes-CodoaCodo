@@ -237,6 +237,11 @@ header {
 #how-it-works > iframe {
   width: 90%;
 }
+iframe {
+  width: 560px;
+  height: 500px;
+  border: none;
+}
 
 /* Most Visited */
 #most-visited {
@@ -260,19 +265,6 @@ header {
   gap: 15px;
   width: 100%;
 }
-
-/*@media (max-width: 500px) {
-  #most-visited .container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  #most-visited .container > .mini-card {
-    scroll-snap-align: start;
-  }
-}*/
 .mini-card h3{
   margin-bottom: 8px;
 }
@@ -289,6 +281,19 @@ header {
 }
 .img-card img:hover {
   transform: scale(1.2);
+}
+/*Responsive mobile*/
+@media (max-width: 500px) {
+  #most-visited .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  #most-visited .container > .mini-card {
+    scroll-snap-align: start;
+  }
 }
 
 /* Footer */
