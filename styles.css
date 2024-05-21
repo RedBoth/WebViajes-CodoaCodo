@@ -90,10 +90,6 @@ header {
 #nav-mobile li a:hover {
   color: var(--orange);
 }
-.social-media {
-  display: flex;
-  flex-direction: row;
-}
 .menu-toggle:checked~#nav-mobile {
   display: flex;
 }
