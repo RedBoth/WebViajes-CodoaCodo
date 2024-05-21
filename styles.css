@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Suez+One&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&family=Suez+One&family=Teko:wght@300..700&display=swap');
 
 :root {
   --black: #000000;
@@ -247,10 +247,10 @@ iframe {
   margin-bottom: 60px;
 }
 #most-visited-header {
-  font-family: "Rye", serif;
-  font-weight: 400;
+  font-family: "Poetsen One", serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 40px;
+  font-size: 60px;
   color: var(--green);
   padding-bottom: 15px;
 }
