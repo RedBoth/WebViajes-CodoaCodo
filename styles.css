@@ -352,23 +352,23 @@ footer p {
   opacity: 80%;
 }
 #patagonia {
-  background-image: url(./assets/img/destinations/d-patagonia-min.JPG);
+  background-image: url(./assets/img/destinations/d-patagonia-min.webp);
   background-position: center;
 }
 #litoral {
-  background-image: url(./assets/img/destinations/d-iguazu3.JPG);
+  background-image: url(./assets/img/destinations/d-iguazu3.webp);
   background-position: 25% ;
 }
 #cuyo {
-  background-image: url(./assets/img/destinations/d-mendoza-min.jpg);
+  background-image: url(./assets/img/destinations/d-mendoza-min.webp);
   background-position: center;
 }
 #noa {
-  background-image: url(./assets/img/destinations/d-jujuy-min.JPG);
+  background-image: url(./assets/img/destinations/d-jujuy-min.webp);
   background-position: center;
 }
 #centro {
-  background-image: url(./assets/img/destinations/d-mardelplata-min.jpeg);
+  background-image: url(./assets/img/destinations/d-mardelplata-min.webp);
   background-position: center;
 }
 .destinations-container {
