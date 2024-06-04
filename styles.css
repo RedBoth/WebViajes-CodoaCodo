@@ -278,6 +278,22 @@ iframe {
 .img-card img:hover {
   transform: scale(1.2);
 }
+/*Responsive desktop*/
+@media (max-width: 1480px) {
+  #most-visited .container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 230px);
+    place-items: center;
+    row-gap: 40px;
+  }
+}
+/*Responsive tablet*/
+@media (max-width: 800px) {
+  #most-visited .container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 230px);
+  }
+}
 /*Responsive mobile*/
 @media (max-width: 500px) {
   #most-visited .container {
@@ -289,6 +305,9 @@ iframe {
   }
   #most-visited .container > .mini-card {
     scroll-snap-align: start;
+  }
+  #most-visited-header {
+    font-size: 45px;
   }
 }
 
