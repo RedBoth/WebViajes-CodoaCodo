@@ -371,7 +371,7 @@ footer p {
   opacity: 80%;
 }
 #patagonia {
-  background-image: url(./assets/img/destinations/d-patagonia-min.webp);
+  background-image: url(./assets/img/destinations/d-patagonia-min4.webp);
   background-position: center;
 }
 #litoral {
@@ -383,11 +383,11 @@ footer p {
   background-position: center;
 }
 #noa {
-  background-image: url(./assets/img/destinations/d-jujuy-min.webp);
+  background-image: url(./assets/img/destinations/d-jujuy-min2.webp);
   background-position: center;
 }
 #centro {
-  background-image: url(./assets/img/destinations/d-mardelplata-min.webp);
+  background-image: url(./assets/img/destinations/d-mardelplata-min3.webp);
   background-position: center;
 }
 .destinations-container {
@@ -434,18 +434,18 @@ footer p {
   flex-direction: column;
 }
 #hoteles {
-  background-image: url(./assets/img/services/hotel4.png);
+  background-image: url(./assets/img/services/hotel4.webp);
   background-size: cover;
   filter: brightness(130%);
 }
 #vuelos {
-  background-image: url(./assets/img/services/bannervuelos.jpg);
+  background-image: url(./assets/img/services/vuelo-banner2.webp);
   background-size: cover;
   background-position: center;
 }
 #excursiones {
-  background-image: url(./assets/img/services/s-excursionesBanner.jpg);
-  background-size: 130%;
+  background-image: url(./assets/img/services/s-excursionesBanner2.webp);
+  background-size: cover;
   background-position: center;
 }
 .container-services {
