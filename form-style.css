@@ -84,6 +84,7 @@ input[type="submit"] {
   border-radius: 5px; /*borde redondeado */
   cursor: pointer;
   transition: background-color 0.3s ease; /*Transición*/
+  margin-bottom: 8px;
 }
 
 input[type="submit"]:hover {

@@ -16,7 +16,7 @@ nameField.addEventListener("blur", function (evento) {
     if (fieldValue.trim().length === 0) {
         field.classList.add("invalid");
         field.nextElementSibling.classList.add("error");
-        field.nextElementSibling.innerText = "Esta información es requerida";
+        field.nextElementSibling.innerText = "Ingrese un nombre valido";
         nameValid = 0;
     } else {
         field.classList.remove("invalid");
@@ -90,7 +90,7 @@ function validation() {
         return true;
     } else {
         nextButton.classList.add("error")
-        nextButton.innerText = "No completaste algun campo del formulario";
+        nextButton.innerText = "Falta completar los siguientes campos: ";
         return false;
     }
 }
