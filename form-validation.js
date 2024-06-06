@@ -89,8 +89,30 @@ function validation() {
     if(nameValid == 1 && emailValid == 1 && radioSelected && destinationValid == 1 && messageValid == 1){
         return true;
     } else {
-        nextButton.classList.add("error")
-        nextButton.innerText = "Falta completar los siguientes campos: ";
+        nextButton.classList.add("error");
+        let errorMessage = "Falta completar los siguientes campos:";
+        if (nameValid == 0) {
+            nameField.classList.add("invalid");
+            errorMessage += "\n- Nombre y Apellido";
+        } 
+        if (emailValid == 0) {
+            mailField.classList.add("invalid");
+            errorMessage += "\n- E-mail";
+        }
+        if (radioValid === 0) {
+            radioButton.classList.add("invalid");
+            errorMessage += "\n- Tipo de consulta";
+        }
+        if (destinationValid == 0) {
+            destinationField.classList.add("invalid");
+            errorMessage += "\n- Destino";
+        }
+        if (messageValid == 0) {
+            messageField.classList.add("invalid");
+            errorMessage += "\n- Mensaje";
+        }
+        
+        nextButton.innerText = errorMessage;
         return false;
     }
 }

@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
-  height: 100vh; 
+  height: auto; 
   margin: 40px 0;
 }
 
@@ -127,6 +127,10 @@ input[type="radio"] {
 .validation-form {
   height: auto;
   text-align: center;
+}
+
+.validation {
+  height: 60vh;
 }
 
 /* Responsive */
