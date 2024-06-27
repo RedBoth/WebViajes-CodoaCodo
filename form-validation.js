@@ -99,7 +99,7 @@ function validation() {
             mailField.classList.add("invalid");
             errorMessage += "\n- E-mail";
         }
-        if (radioValid === 0) {
+        if (radioSelected == false) {
             radioButton.classList.add("invalid");
             errorMessage += "\n- Tipo de consulta";
         }
